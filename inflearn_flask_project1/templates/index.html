@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style_css.css')}}">
+</head>
+<body>
+
+    <div>
+        여기는 html 영역입니다.
+
+        <a href="/about"> 어바웃페이지로 이동</a>
+
+    </div>
+
+
+
+    <div class="naver_content">
+        <h1> 네이버 인기뉴스 입니다</h1>
+        <ol>
+        {% for i in range(len_naver)%}
+        <a href="{{n_href[i]}}"> <li> {{ naver[i] }}</li></a>
+        {% endfor %}
+        </ol>
+    </div>
+    
+
+
+    <div class="naver_content">
+        <h1> 알라딘 전체순위 입니다</h1>
+        <ol>
+        {% for i in range(len_aladin)%}
+        <a href="{{a_href[i]}}">  <li> {{ aladin[i] }}</li></a>
+        {% endfor %}
+        </ol>
+    </div>
+    
+
+
+
+    <div class="naver_content">
+        <h1> 알라딘 종교순위 입니다</h1>
+        <ol>
+        {% for i in range(len_aladin_rb)%}
+        <a href="{{rba_href[i]}}"> <li> {{ aladin_rb[i] }}</li></a>
+        {% endfor %}
+        </ol>
+    </div>
+
+
+
+</body>
+</html>
+ 
