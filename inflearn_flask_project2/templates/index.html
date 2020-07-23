@@ -16,19 +16,29 @@
 </head>
 <body>
     <div id="wrap">
-        <form action='/result' method="POST">
-          <div class="form-group">
-            <label for="exampleInputEmail1">크롤링 할 키워드</label>
-            <input type="text" class="form-control" name="input1" placeholder="키워드를 입력하세요">
-          </div>
-          
-          <div class="form-group">
-            <label for="exampleInputPassword1">페이지수</label>
-            <input type="number" class="form-control" name="input2"  placeholder="페이지수를 입력해주세요">
-          </div>
-          
-          <button type="submit" class="btn btn-default">제출</button>
-        </form>
+        <div>
+            <form action='/result' method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">크롤링 할 키워드</label>
+                <input type="text" class="form-control" name="input1" placeholder="키워드를 입력하세요">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleInputPassword1">페이지수</label>
+                <input type="number" class="form-control" name="input2"  placeholder="페이지수를 입력해주세요">
+              </div>
+              
+              <button type="submit" class="btn btn-default">제출</button>
+            </form>
+        </div>
+
+        <div>
+
+            <form action="/naver_shopping">
+                <button type="submit">네이버 쇼핑 크롤링 셀레니움</button>
+            </form> 
+
+        </div>
     </div>
 </body>
 </html>
